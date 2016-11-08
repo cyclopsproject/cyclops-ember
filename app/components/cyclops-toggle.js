@@ -1,0 +1,1 @@
+export { default } from 'cyclops-ember/components/cyclops-toggle';
