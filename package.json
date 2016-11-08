@@ -1,7 +1,7 @@
 {
-  "name": "cyclops",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "name": "cyclops-ember",
+  "version": "1.0.0-alpha.1",
+  "description": "Ember addon for the Cyclops framework.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -41,10 +41,15 @@
     "loader.js": "^4.0.10"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "cyclops"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.7"
+    "cyclops": "^2.0.0-alpha.1",
+    "ember-cli-babel": "^5.1.7",
+    "ember-cli-htmlbars": "^1.0.10",
+    "ember-cli-node-assets": "^0.1.4",
+    "jquery-ui": "^1.12.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"

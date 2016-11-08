@@ -2,5 +2,31 @@
 'use strict';
 
 module.exports = {
-  name: 'cyclops'
+  name: 'cyclops-ember',
+  options: {
+    nodeAssets: {
+      'jquery-ui': {
+        import: [ 'ui/widget.js' ]
+      },
+      'cyclops': {
+        import: [
+          {
+            path: 'www/assets/scripts/cyclops.core.js',
+            sourceMap: 'www/assets/scripts/cyclops.core.js.map'
+          },
+          {
+            path: 'www/assets/css/cyclops.core.css',
+            sourceMap: 'www/assets/css/cyclops.core.css.map'
+          }
+        ],
+        public: {
+          include: [
+            'www/assets/img',
+            'www/assets/svg'
+          ],
+          destDir: './'
+        }
+      }
+    }
+  }
 };
