@@ -5,9 +5,6 @@ module.exports = {
   name: 'cyclops-ember',
   options: {
     nodeAssets: {
-      'jquery-ui': {
-        import: [ 'ui/widget.js' ]
-      },
       'cyclops': {
         import: [
           {
